@@ -1,0 +1,153 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Travel Buddy Finder</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eef5f9;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 450px;
+            margin: 30px auto;
+            padding: 25px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+        }
+
+        h1 {
+            text-align: center;
+            color: #176b87;
+            margin-bottom: 10px;
+        }
+
+        p {
+            text-align: center;
+            color: #666;
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 6px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #176b87;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 25px;
+            padding: 12px;
+            background-color: #176b87;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #10546b;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>✈️ Travel Buddy Finder</h1>
+
+        <p>Find your next adventure partner!</p>
+
+        <form action="/travellers" method="POST">
+
+            <label for="travellerId">Traveller ID:</label>
+            <input
+                type="text"
+                id="travellerId"
+                name="travellerId"
+                placeholder="Enter traveller ID"
+                required
+            >
+
+            <label for="name">Name:</label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+                required
+            >
+
+            <label for="destination">Destination:</label>
+            <input
+                type="text"
+                id="destination"
+                name="destination"
+                placeholder="Where do you want to travel?"
+                required
+            >
+
+            <label for="travelDate">Travel Date:</label>
+            <input
+                type="date"
+                id="travelDate"
+                name="travelDate"
+                required
+            >
+
+            <label for="budget">Budget (₹):</label>
+            <input
+                type="number"
+                id="budget"
+                name="budget"
+                placeholder="Enter your budget"
+                min="1"
+                required
+            >
+
+            <label for="email">Email:</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email address"
+                required
+            >
+
+            <button type="submit">Add Traveller</button>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
+```

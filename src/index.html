@@ -1,0 +1,137 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Member Registration</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 400px;
+            margin: 50px auto;
+            padding: 25px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 20px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #217dbb;
+        }
+
+        .note {
+            text-align: center;
+            color: #666;
+            font-size: 13px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Club Member Registration</h1>
+
+        <form action="/members" method="POST">
+
+            <label for="studentId">Student ID:</label>
+            <input
+                type="text"
+                id="studentId"
+                name="studentId"
+                placeholder="Enter student ID"
+                required
+            >
+
+            <label for="name">Student Name:</label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter student name"
+                required
+            >
+
+            <label for="department">Department:</label>
+            <input
+                type="text"
+                id="department"
+                name="department"
+                placeholder="Enter department"
+                required
+            >
+
+            <label for="year">Year of Study:</label>
+            <input
+                type="number"
+                id="year"
+                name="year"
+                min="1"
+                max="4"
+                placeholder="Enter year (1-4)"
+                required
+            >
+
+            <label for="club">Club Name:</label>
+            <input
+                type="text"
+                id="club"
+                name="club"
+                placeholder="Enter club name"
+                required
+            >
+
+            <button type="submit">Register Member</button>
+
+        </form>
+
+        <p class="note">Please fill in all the details to register.</p>
+
+    </div>
+
+</body>
+</html>
+```
